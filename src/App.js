@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import TopMenu from "./TopBar/TopMenu";
+import Title from "./TopBar/Title";
+import CategoryList from "./Category/CategoryList";
 function App() {
   return (
     <>
-      <TopMenu />
-      그래서 뭐먹어?
+      <TopMenu /> <Title /> <CategoryList />
     </>
   );
 }
