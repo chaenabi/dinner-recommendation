@@ -4,11 +4,11 @@ import Category from "../components/Category";
 import { CategoryStyleBlock } from '../styles/style'
 
 const CategoryContainer = () => {
-  const state = useSelector(state => state.category)
+  const category = useSelector(state => state.category)
 
   return (
     <CategoryStyleBlock>
-        <Category category={state} />
+        <Category category={category} />
     </CategoryStyleBlock>
   )
 }

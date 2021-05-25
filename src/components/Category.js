@@ -4,14 +4,12 @@ import { select } from "../modules/category";
 import { CategoryStyle } from '../styles/style'
 
 const Category = ({ category }) => {
-
   const dispatch = useDispatch()
-  const onSelect = useCallback(() => dispatch(select()), [dispatch])
-
+  const onSelect = useCallback((categoryId) => dispatch(select(categoryId)), [dispatch])
   return (
       category.map((item, index) => (
-        <CategoryStyle key={index}>
-          <p onClick={onSelect} key={index}>{item.name}</p>
+        <CategoryStyle key={index} selected={item.selected}>
+          <p key={item.categoryId} onClick={() => onSelect(item.categoryId)}>{item.categoryName}</p>
         </CategoryStyle>
       ))
   )

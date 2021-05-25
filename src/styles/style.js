@@ -33,8 +33,9 @@ export const CategoryStyle = styled.div`
     margin: 0
   }
 
-  &:hover {
-    color: orange;
+  &:hover, &:active {
     font-weight: 700;
   }
+  color: ${props => props.selected ? 'orange' : 'black'};
+  font-weight: ${props => props.selected ? '700' : 'normal'};
 `

@@ -1,20 +1,27 @@
 import { ON_SELECT } from '../types/category'
 
-export const select = () => ({ type: ON_SELECT })
+export const select = (categoryId) => ({ type: ON_SELECT, categoryId })
 
 const initialState = [
-    { id: 1, name: "한식" },
-    { id: 2, name: "양식" },
-    { id: 3, name: "중식" },
-    { id: 4, name: "일식" },
-    { id: 5, name: "분식" },
-    { id: 6, name: "테마별" },
-    { id: 7, name: "기타" },
-    { id: 8, name: "채식" }
+    { categoryId: 1, categoryName: "한식", selected: false },
+    { categoryId: 2, categoryName: "양식", selected: false },
+    { categoryId: 3, categoryName: "중식", selected: false },
+    { categoryId: 4, categoryName: "일식", selected: false },
+    { categoryId: 5, categoryName: "분식", selected: false },
+    { categoryId: 6, categoryName: "테마별", selected: false },
+    { categoryId: 7, categoryName: "기타", selected: false },
+    { categoryId: 8, categoryName: "채식", selected: false }
 ]
 
 export default function category(state = initialState, action) {
     switch (action.type) {
+        case ON_SELECT:
+            return state.map((element) => { 
+                return {
+                    ...element,
+                    selected: element.categoryId === action.categoryId
+                }
+            })
         default:
             return state
     }

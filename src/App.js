@@ -1,5 +1,6 @@
 import React from "react";
 import Title from "./components/Title";
+import MenuContainer from "./containers/MenuContainer"
 import CategoryContainer from "./containers/CategoryContainer";
 
 export default function App() {
@@ -7,6 +8,7 @@ export default function App() {
     <React.Fragment>
        <Title />
        <CategoryContainer />
+       <MenuContainer />
     </React.Fragment>
   )
 }
