@@ -6,7 +6,7 @@ const Title = () => {
   const title = `저녁 메뉴 추천받기`
   return (
     <TitleStyle>
-      <FaCoins />
+      <FaCoins/>
       {title}
     </TitleStyle>
   )
