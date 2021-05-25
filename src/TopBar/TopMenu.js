@@ -45,7 +45,7 @@ const TopMenu = () => {
         <TopMenuStyle>{menu.Home}</TopMenuStyle>
         <TopMenuStyle>{menu.Sign ? "로그아웃 " : "로그인"}</TopMenuStyle>
         <TopMenuStyle>{menu.SeeMyPage}</TopMenuStyle>
-        <TopMenuStyle> {menu.AfterService}</TopMenuStyle>
+        <TopMenuStyle>{menu.AfterService}</TopMenuStyle>
 
         <SearchMenuBlockStyle>
           <input
@@ -58,7 +58,6 @@ const TopMenu = () => {
             }}
           />
           <FaSearch />
-          인기검색어
         </SearchMenuBlockStyle>
       </TopMenuBlockStyle>
     </div>

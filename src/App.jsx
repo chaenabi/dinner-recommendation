@@ -1,13 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import TopMenu from "./TopBar/TopMenu";
 import Title from "./TopBar/Title";
 import CategoryList from "./Category/CategoryList";
-function App() {
+
+export default function App() {
   return (
-    <>
+    <React.Fragment>
       <TopMenu /> <Title /> <CategoryList />
-    </>
+    </React.Fragment>
   );
 }
-
-export default App;
