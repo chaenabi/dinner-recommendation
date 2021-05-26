@@ -1,1 +1,1 @@
-export const ON_CLICK = 'category/CLICK'
+export const GET_MENU = 'category/GET_MENU'

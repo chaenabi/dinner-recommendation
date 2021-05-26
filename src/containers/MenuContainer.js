@@ -8,7 +8,7 @@ const MenuContainer = () => {
 
     return (
         <div>
-            {category.map((element) => element.selected && <Menu categoryName={element.categoryName} menu={menu} key={element.categoryId}/>)}            
+            {category.map((element) => element.selected && <Menu menu={menu} key={element.categoryId}/>)}            
         </div>
     )
 }

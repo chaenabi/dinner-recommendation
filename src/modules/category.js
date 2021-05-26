@@ -1,6 +1,8 @@
 import { ON_SELECT } from '../types/category'
+import { put, delay, takeLatest } from 'redux-saga/effects'
+import { showMenu } from '../modules/menu'
 
-export const select = (categoryId) => ({ type: ON_SELECT, categoryId })
+export const select = (categoryId, clickedCategoryName) => ({ type: ON_SELECT, categoryId, clickedCategoryName })
 
 const initialState = [
     { categoryId: 1, categoryName: "한식", selected: false },
@@ -12,6 +14,16 @@ const initialState = [
     { categoryId: 7, categoryName: "기타", selected: false },
     { categoryId: 8, categoryName: "채식", selected: false }
 ]
+
+function* selectSaga(action) {
+    const clickedCategoryName = yield action.clickedCategoryName
+    yield delay(2000)
+    yield put(showMenu(clickedCategoryName))
+}
+
+export function* categorySaga() {
+    yield takeLatest(ON_SELECT, selectSaga)
+}
 
 export default function category(state = initialState, action) {
     switch (action.type) {

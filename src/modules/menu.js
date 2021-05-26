@@ -1,52 +1,61 @@
-import { ON_CLICK } from '../types/menu'
-
-export const show = () => ({ type: ON_CLICK })
+import { GET_MENU } from '../types/menu'
+// import { takeEvery, put } from 'redux-saga/effects'
 
 const initialState = {
     "한식" : [
                 { 
                     menuId: 10,
-                    categoryName: "든든한 국밥",
-                    selected: false
+                    menuName: "든든한 국밥",
+                    selectedMenu: false
                 },
                 {
                     menuId: 11,
-                    categoryName: "맛있는 국밥",
-                    selected: false
+                    menuName: "맛있는 국밥",
+                    selectedMenu: false
                 },
                 {
                     menuId: 12,
-                    categoryName: "양많은 국밥",
-                    selected: false
+                    menuName: "양많은 국밥",
+                    selectedMenu: false
                 }
     ],
     "양식" : [
                 {
                     menuId: 20,
-                    categoryName: "스테이크",
-                    selected: false
+                    menuName: "스테이크",
+                    selectedMenu: false
                 },
                 {
                     menuId: 21,
-                    categoryName: "햄버거",
-                    selected: false
+                    menuName: "햄버거",
+                    selectedMenu: false
                 }
     ],
     "채식" : [
                 {
                     menuId: 80,
-                    categoryName: "콩고기",
-                    selected: false
+                    menuName: "콩고기",
+                    selectedMenu: false
                 }
     ],
 }
 //중식 일식 분식 테마별 기타 채식
 
+export const showMenu = (clickedCategoryName) => ({ type: GET_MENU, clickedCategoryName })
+
+// function* getMenuSaga() {
+//     yield put(showMenu())
+// }
+
+export function* menuSaga() {
+//    yield takeEvery(GET_MENU, getMenuSaga)
+}
+
 export default function menu(state = initialState, action) {
     switch (action.type) {
-        case ON_CLICK:
-            return state
+        case GET_MENU:
+            return { ...state, clickedCategoryName: action.clickedCategoryName }
         default:
-            return state
+            return { ...state, clickedCategoryName: action.clickedCategoryName }
     }
 }

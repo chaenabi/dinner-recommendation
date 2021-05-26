@@ -10,10 +10,14 @@ import ReduxThunk from 'redux-thunk'
 import logger from 'redux-logger'
 import { applyMiddleware, createStore } from 'redux'
 import { composeWithDevTools } from 'redux-devtools-extension'
-import { rootReducer } from './modules/root'
+import { rootReducer, rootSaga } from './modules/root'
+import createSagaMiddleware from 'redux-saga'
 
 const customHistory = createBrowserHistory()
-const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(ReduxThunk, logger)))
+//const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(ReduxThunk, logger)))
+const sagaMiddleware = createSagaMiddleware()
+const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(ReduxThunk.withExtraArgument({ history: customHistory }), sagaMiddleware, logger)))
+sagaMiddleware.run(rootSaga)
 
 ReactDOM.render(
     <React.StrictMode>
