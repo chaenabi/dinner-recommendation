@@ -1,10 +1,10 @@
 import { put, takeLatest } from '@redux-saga/core/effects'
-import { LOAD_ALL_MENU } from '../types/menu'
+import { GET_MENU } from '../types/menu'
 import { ON_CLICK, ROLL_RANDOM } from '../types/randomChoice'
 
 export const randomClick = () => ({ type: ON_CLICK })
 const rollRandom = () => ({ type: ROLL_RANDOM })
-export const getAllMenu = (menu) => ({ type: LOAD_ALL_MENU, menu })
+export const getAllMenu = (menu) => ({ type: GET_MENU, menu })
 
 function* showRandomSelectedSaga() {
     yield put(rollRandom())
@@ -29,7 +29,7 @@ const roll = (state) => {
 
 export default function randomChoice(state = initialState, action) {
     switch (action.type) {
-        case LOAD_ALL_MENU:
+        case GET_MENU:
             return action.menu
         case ROLL_RANDOM:
             const rolled = roll(state)

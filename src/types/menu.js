@@ -1,1 +1,1 @@
-export const LOAD_ALL_MENU = 'category/LOAD_ALL_MENU'
+export const GET_MENU = 'category/GET_MENU'
