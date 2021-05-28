@@ -39,3 +39,14 @@ export const CategoryStyle = styled.div`
   color: ${props => props.selected ? 'orange' : 'black'};
   font-weight: ${props => props.selected ? '700' : 'normal'};
 `
+
+export const MenuStyleBlock = styled.div`
+  display: flex;
+  justify-content: center;
+`
+
+export const RandomChoiceStyleBlock = styled.div`
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+`
