@@ -24,7 +24,7 @@ const roll = (state, count) => {
         state[menu].map(e => e.menuName && menuArray.push(e.menuName))
     }
     let temp = count
-    while (temp++ < 6) {
+    while (temp++ < count + 8) {
         menuArray.splice(Math.floor(Math.random() * menuArray.length), 1)
     }
 

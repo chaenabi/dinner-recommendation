@@ -1,23 +1,47 @@
 import { GET_MENU } from '../types/menu'
 // import { takeEvery, put } from 'redux-saga/effects'
+import denjang from '../images/denjangjjige.jpg'
+import kimchi from '../images/kimchijjige.jpg'
 
 const initialState = {
     "한식" : [
                 { 
                     menuId: 10,
                     menuName: "든든한 국밥",
+                    imageSrc: denjang,
                     selectedMenu: false
                 },
                 {
                     menuId: 11,
-                    menuName: "맛있는 국밥",
+                    menuName: "신기한 국밥",
+                    imageSrc: kimchi,
                     selectedMenu: false
                 },
                 {
                     menuId: 12,
                     menuName: "양많은 국밥",
+                    imageSrc: kimchi,
                     selectedMenu: false
-                }
+                },
+                {
+                    menuId: 13,
+                    menuName: "맛없는 국밥",
+                    imageSrc: kimchi,
+                    selectedMenu: false
+                },
+                {
+                    menuId: 14,
+                    menuName: "맛있는 국밥",
+                    imageSrc: kimchi,
+                    selectedMenu: false
+                },
+                {
+                    menuId: 15,
+                    menuName: "굉장한 국밥",
+                    imageSrc: kimchi,
+                    selectedMenu: false
+                },
+
     ],
     "양식" : [
                 {

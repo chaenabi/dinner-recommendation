@@ -1,7 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import Menu from '../components/Menu'
-import { MenuStyleBlock } from '../styles/style'
+import { MenuStyleGrid, MenuStyleBlock } from '../styles/style'
 
 const MenuContainer = () => {
     const category = useSelector(state => state.category)
@@ -9,7 +9,9 @@ const MenuContainer = () => {
 
     return (
         <MenuStyleBlock>
-            {category.map((element) => element.selected && <Menu menu={menu} key={element.categoryId}/>)}
+            <MenuStyleGrid>
+                {category.map((element) => element.selected && <Menu menu={menu} key={element.categoryId}/>)}
+            </MenuStyleGrid>
         </MenuStyleBlock>
     )
 }
