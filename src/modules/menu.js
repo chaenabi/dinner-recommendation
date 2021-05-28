@@ -1,4 +1,4 @@
-import { LOAD_ALL_MENU } from '../types/menu'
+import { GET_MENU } from '../types/menu'
 // import { takeEvery, put } from 'redux-saga/effects'
 
 const initialState = {
@@ -41,7 +41,7 @@ const initialState = {
 }
 //중식 일식 분식 테마별 기타 채식
 
-export const showMenu = (clickedCategoryName) => ({ type: LOAD_ALL_MENU, clickedCategoryName })
+export const showMenu = (clickedCategoryName) => ({ type: GET_MENU, clickedCategoryName })
 
 // function* getMenuSaga() {
 //     yield put(showMenu())
@@ -53,7 +53,7 @@ export function* menuSaga() {
 
 export default function menu(state = initialState, action) {
     switch (action.type) {
-        case LOAD_ALL_MENU:
+        case GET_MENU:
             return { ...state, clickedCategoryName: action.clickedCategoryName }
         default:
             return { ...state, clickedCategoryName: action.clickedCategoryName }
