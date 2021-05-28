@@ -41,6 +41,138 @@ const initialState = {
                     imageSrc: kimchi,
                     selectedMenu: false
                 },
+                {
+                    menuId: 16,
+                    menuName: "신기한 국밥",
+                    imageSrc: kimchi,
+                    selectedMenu: false
+                },
+                {
+                    menuId: 17,
+                    menuName: "양많은 국밥",
+                    imageSrc: kimchi,
+                    selectedMenu: false
+                },
+                {
+                    menuId: 18,
+                    menuName: "맛없는 국밥",
+                    imageSrc: kimchi,
+                    selectedMenu: false
+                },
+                {
+                    menuId: 19,
+                    menuName: "맛있는 국밥",
+                    imageSrc: kimchi,
+                    selectedMenu: false
+                },
+                {
+                    menuId: 20,
+                    menuName: "굉장한 국밥",
+                    imageSrc: kimchi,
+                    selectedMenu: false
+                },
+                { 
+                    menuId: 21,
+                    menuName: "든든한 국밥",
+                    imageSrc: denjang,
+                    selectedMenu: false
+                },
+                {
+                    menuId: 22,
+                    menuName: "신기한 국밥",
+                    imageSrc: kimchi,
+                    selectedMenu: false
+                },
+                {
+                    menuId: 23,
+                    menuName: "양많은 국밥",
+                    imageSrc: kimchi,
+                    selectedMenu: false
+                },
+                {
+                    menuId: 24,
+                    menuName: "맛없는 국밥",
+                    imageSrc: kimchi,
+                    selectedMenu: false
+                },
+                {
+                    menuId: 25,
+                    menuName: "맛있는 국밥",
+                    imageSrc: kimchi,
+                    selectedMenu: false
+                },
+                {
+                    menuId: 26,
+                    menuName: "굉장한 국밥",
+                    imageSrc: kimchi,
+                    selectedMenu: false
+                },
+                {
+                    menuId: 27,
+                    menuName: "신기한 국밥",
+                    imageSrc: kimchi,
+                    selectedMenu: false
+                },
+                {
+                    menuId: 28,
+                    menuName: "양많은 국밥",
+                    imageSrc: kimchi,
+                    selectedMenu: false
+                },
+                {
+                    menuId: 29,
+                    menuName: "맛없는 국밥",
+                    imageSrc: kimchi,
+                    selectedMenu: false
+                },
+                {
+                    menuId: 30,
+                    menuName: "맛있는 국밥",
+                    imageSrc: kimchi,
+                    selectedMenu: false
+                },
+                {
+                    menuId: 31,
+                    menuName: "굉장한 국밥",
+                    imageSrc: kimchi,
+                    selectedMenu: false
+                },
+                {
+                    menuId: 32,
+                    menuName: "굉장한 국밥",
+                    imageSrc: kimchi,
+                    selectedMenu: false
+                },
+                {
+                    menuId: 33,
+                    menuName: "신기한 국밥",
+                    imageSrc: kimchi,
+                    selectedMenu: false
+                },
+                {
+                    menuId: 34,
+                    menuName: "양많은 국밥",
+                    imageSrc: kimchi,
+                    selectedMenu: false
+                },
+                {
+                    menuId: 35,
+                    menuName: "맛없는 국밥",
+                    imageSrc: kimchi,
+                    selectedMenu: false
+                },
+                {
+                    menuId: 36,
+                    menuName: "맛있는 국밥",
+                    imageSrc: kimchi,
+                    selectedMenu: false
+                },
+                {
+                    menuId: 37,
+                    menuName: "굉장한 국밥",
+                    imageSrc: kimchi,
+                    selectedMenu: false
+                },
 
     ],
     "양식" : [

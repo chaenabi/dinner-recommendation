@@ -23,12 +23,18 @@ const roll = (state, count) => {
         if (menu === undefined || menu === 'clickedCategoryName' || menu === 'count') continue
         state[menu].map(e => e.menuName && menuArray.push(e.menuName))
     }
-    let temp = count
-    while (temp++ < count + 8) {
-        menuArray.splice(Math.floor(Math.random() * menuArray.length), 1)
-    }
+    let result = []
+    let taken = []
+    let len = menuArray.length
+    let n = count
 
-    return menuArray
+    while (n--) {
+        let x = Math.floor(Math.random() * len);
+        result[n] = menuArray[x in taken ? taken[x] : x];
+        taken[x] = --len in taken ? taken[len] : len;
+    }
+    
+    return result
 }
 
 let count = 1;

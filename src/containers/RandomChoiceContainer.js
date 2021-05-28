@@ -11,7 +11,7 @@ const RandomChoiceContainer = () => {
     const dispatch = useDispatch()
     const onRandomClick = useCallback((count) => {
 
-        if (count < 1 || count > 4) {
+        if (count < 1 || count >= 4) {
             alert(`랜덤하게 고를 수 있는 메뉴는 3개까지 고를 수 있어요.
             잘못된 값을 입력하셨으니, 한 개만 골라서 보여드릴게요.`)
             count = 1
