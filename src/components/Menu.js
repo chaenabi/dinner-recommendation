@@ -10,4 +10,4 @@ const Menu = ({ menu }) => {
     )
 }
 
-export default Menu
+export default React.memo(Menu)

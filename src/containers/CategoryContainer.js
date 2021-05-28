@@ -16,4 +16,4 @@ const CategoryContainer = () => {
   )
 }
 
-export default CategoryContainer
+export default React.memo(CategoryContainer)

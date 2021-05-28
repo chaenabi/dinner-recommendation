@@ -9,7 +9,13 @@ const RandomChoiceContainer = () => {
     const menu = useSelector(state => state.menu)
     const dispatch = useDispatch()
     const onRandomClick = useCallback(() => dispatch(randomClick()), [dispatch]) 
-    useEffect(() => dispatch(getAllMenu(menu)), [dispatch])
+    
+
+    useEffect(() => {
+        dispatch(getAllMenu(menu))
+    }, [dispatch])
+
+    console.log(menu.clickedCategoryName)
 
     return (
         <div>
@@ -18,4 +24,4 @@ const RandomChoiceContainer = () => {
     )
 }
 
-export default RandomChoiceContainer
+export default React.memo(RandomChoiceContainer)

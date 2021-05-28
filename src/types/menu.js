@@ -1,1 +1,1 @@
-export const GET_MENU = 'category/GET_MENU'
+export const GET_MENU = 'menu/GET_MENU'

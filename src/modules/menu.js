@@ -54,8 +54,9 @@ export function* menuSaga() {
 export default function menu(state = initialState, action) {
     switch (action.type) {
         case GET_MENU:
-            return { ...state, clickedCategoryName: action.clickedCategoryName }
         default:
+            if (!action.clickedCategoryName)
+                return { ...state, clickedCategoryName: state.clickedCategoryName }
             return { ...state, clickedCategoryName: action.clickedCategoryName }
     }
 }

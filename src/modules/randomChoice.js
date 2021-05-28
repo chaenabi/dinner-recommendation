@@ -30,6 +30,8 @@ const roll = (state) => {
 export default function randomChoice(state = initialState, action) {
     switch (action.type) {
         case GET_MENU:
+            if (!action.menu)
+                return state
             return action.menu
         case ROLL_RANDOM:
             const rolled = roll(state)
