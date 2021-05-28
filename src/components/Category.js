@@ -1,11 +1,7 @@
-import React, { useCallback } from "react";
-import { useDispatch } from "react-redux";
-import { select } from "../modules/category";
+import React from "react";
 import { CategoryStyle } from '../styles/style'
 
-const Category = ({ category }) => {
-  const dispatch = useDispatch()
-  const onSelect = useCallback((categoryId, categoryName) => dispatch(select(categoryId, categoryName)), [dispatch])
+const Category = ({ category, onSelect }) => {
   return (
       category.map((item, index) => (
         <CategoryStyle key={index} selected={item.selected}>

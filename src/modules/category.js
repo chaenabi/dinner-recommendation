@@ -1,5 +1,5 @@
 import { ON_SELECT } from '../types/category'
-import { put, delay, takeLatest } from 'redux-saga/effects'
+import { put, takeLatest } from 'redux-saga/effects'
 import { showMenu } from '../modules/menu'
 
 export const select = (categoryId, clickedCategoryName) => ({ type: ON_SELECT, categoryId, clickedCategoryName })
@@ -17,7 +17,6 @@ const initialState = [
 
 function* selectSaga(action) {
     const clickedCategoryName = yield action.clickedCategoryName
-    yield delay(2000)
     yield put(showMenu(clickedCategoryName))
 }
 
