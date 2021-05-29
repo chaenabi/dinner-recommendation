@@ -10,9 +10,8 @@ const initialState = [
     { categoryId: 3, categoryName: "중식", selected: false },
     { categoryId: 4, categoryName: "일식", selected: false },
     { categoryId: 5, categoryName: "분식", selected: false },
-    { categoryId: 6, categoryName: "테마별", selected: false },
-    { categoryId: 7, categoryName: "기타", selected: false },
-    { categoryId: 8, categoryName: "채식", selected: false }
+    { categoryId: 6, categoryName: "기타", selected: false },
+    { categoryId: 7, categoryName: "채식", selected: false }
 ]
 
 function* selectSaga(action) {

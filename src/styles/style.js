@@ -72,7 +72,7 @@ export const MenuStyleGrid = styled.div`
   padding: 0;
   display: grid;
   border: border-box;
-  grid-template-columns: repeat(auto-fill, minmax(20%, auto));
+  grid-template-columns: repeat(auto-fill, minmax(25%, auto));
   justify-items: center;
 `
 
@@ -99,7 +99,55 @@ export const MenuImageStyle = styled.img`
 `
 
 export const RandomChoiceStyleBlock = styled.div`
-  display: flex;
-  margin-top: 10px;
-  justify-content: center;
+  margin-top: 50px;
+  margin-left: 30%;
+`
+
+export const RandomlyChosen = styled.div`
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0;
+    justify-content: space-around;
+`
+
+export const PaginationStyle = styled.div`
+  margin-left: 10%;
+`
+
+export const PageUl = styled.ul`
+  margin: 0;
+  float: left;
+  list-style: none;
+  text-align: center;
+  border-radius: 3px;
+  color: white;
+  padding: 1px;
+  background-color: rgba(0, 0, 0, 0.4);
+`
+
+export const PageLi = styled.li`
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 5px;
+  border-radius: 5px;
+  width: 25px;
+  &:hover, &:active {
+    cursor: pointer;
+    color: white;
+    background-color: orange;
+  }
+  &:focus::after {
+    color: white;
+    background-color: orange;
+  }
+`
+
+export const PageDiv = styled.div`
+  &:hover::after,
+  &:focus::after {
+    border-radius: 100%;
+    color: white;
+    background-color: orange;
+  }
 `

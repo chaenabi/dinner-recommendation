@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
 import Menu from '../components/Menu'
 import Pagination from '../components/Pagination'
@@ -8,23 +8,53 @@ const MenuContainer = () => {
     const category = useSelector(state => state.category)
     const menu = useSelector(state => state.menu)
 
-    const [loading, setLoading] = useState(false)
-    const [currentPage, setCurrentPage] = useState(1)
-    const [postsPerPage] = useState(10)
-    const paginate = useCallback((pageNumber) => setCurrentPage(pageNumber), [currentPage]);
+    const [loading] = useState(false)
+    const [postsPerPage] = useState(12);
+    const [currentPage, setCurrentPage] = useState(1);
+    const [selectedCategoryName, setSelectedCategoryName] = useState()
+
+    const indexOfLast = currentPage * postsPerPage;
+    const indexOfFirst = indexOfLast - postsPerPage;
+
+    const currentPosts = (tmp) => {
+        if (tmp) {
+            let currentPosts = 0;
+            currentPosts = tmp.slice(indexOfFirst, indexOfLast);
+            return currentPosts;
+        }
+        return;
+    }
+
+    useEffect(() => {
+       setSelectedCategoryName(prev => {
+            const changedCategoryName = menu['clickedCategoryName']
+            if (prev !== changedCategoryName) {
+                setCurrentPage(1)
+                return changedCategoryName
+            }
+            return prev
+        })
+    })
+
+    let totalSelected, isSelected = false;
+    let clickedCategoryName = menu['clickedCategoryName']
+    if (clickedCategoryName) {
+        if (menu[clickedCategoryName]) {
+            totalSelected = menu[clickedCategoryName].length
+        }
+        isSelected = true
+    }
 
     return (
         <React.Fragment>
         <MenuStyleBlock>
             <MenuStyleGrid>
-                {category.map((element, index) => element.selected && 
-                                <React.Fragment key={index}>
-                                    <Menu menu={menu} key={element.categoryId} loading={loading} />
-                                </React.Fragment>
-                            )}
+                {category.map((element) => element.selected &&
+                                <Menu menu={currentPosts(menu[menu['clickedCategoryName']])} key={element.categoryId} loading={loading}/>
+                )}
             </MenuStyleGrid>
         </MenuStyleBlock>
-        <Pagination postsPerPage={postsPerPage} totalPosts={menu.length} paginate={paginate}/>
+        {isSelected && totalSelected && <Pagination postsPerPage={postsPerPage} totalPosts={totalSelected} paginate={setCurrentPage}></Pagination>}
         </React.Fragment>
     )
 }

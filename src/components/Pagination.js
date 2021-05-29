@@ -1,27 +1,27 @@
-import React from "react";
+import React from 'react';
+import { PageUl, PageLi, PageDiv, PaginationStyle } from '../styles/style'
 
 const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
-  const pageNumber = [];
   
-  // Math.ceil: 올림
+  const pageNumbers = [];
   for (let i = 1; i <= Math.ceil(totalPosts / postsPerPage); i++) {
-    pageNumber.push(i);
+    pageNumbers.push(i);
   }
 
-  console.log(postsPerPage, totalPosts, paginate)
-
   return (
-    <ul className="pagination">
-      {pageNumber.map((pageNum) => (
-        <li
-          key={pageNum}
-          className="pagination_item"
-          onClick={() => paginate(pageNum)}
-        >
-          {pageNum}
-        </li>
-      ))}
-    </ul>
+    <div>
+      <PaginationStyle>
+        <PageUl>
+          {pageNumbers.map(number => (
+            <PageLi key={number} onClick={() => { paginate(number); }}>
+              <PageDiv>
+                {number}
+              </PageDiv>
+            </PageLi>
+          ))}
+        </PageUl>
+      </PaginationStyle>
+    </div>
   );
 };
 
