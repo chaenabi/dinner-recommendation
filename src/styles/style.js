@@ -81,7 +81,7 @@ export const MenuStyleBlock = styled.div`
   margin: 0 auto;
 `
 
-export const MenuImageStyle = styled.img`
+export const ImageStyle = styled.img`
   border-radius: 10%;
   width: 150px;
   height: 150px;
@@ -99,7 +99,7 @@ export const MenuImageStyle = styled.img`
 `
 
 export const RandomChoiceStyleBlock = styled.div`
-  margin-top: 50px;
+  margin-top: 40px;
   margin-left: 30%;
 `
 

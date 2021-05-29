@@ -669,6 +669,7 @@ export const initialMenuState = {
                 {
                     menuId: 14,
                     menuName: "수정과",
+                    imageSrc: kimchi,
                     selectedMenu: false
                 },
                 {

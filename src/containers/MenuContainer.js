@@ -16,11 +16,11 @@ const MenuContainer = () => {
     const indexOfLast = currentPage * postsPerPage;
     const indexOfFirst = indexOfLast - postsPerPage;
 
-    const currentPosts = (tmp) => {
-        if (tmp) {
-            let currentPosts = 0;
-            currentPosts = tmp.slice(indexOfFirst, indexOfLast);
-            return currentPosts;
+    const currentPosts = (contents) => {
+        if (contents) {
+            let result = 0;
+            result = contents.slice(indexOfFirst, indexOfLast);
+            return result;
         }
         return;
     }

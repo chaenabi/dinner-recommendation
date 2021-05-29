@@ -19,12 +19,13 @@ const RandomChoiceContainer = () => {
     }, [dispatch])
 
     useEffect(() => {
+        delete menu['clickedCategoryName'] // this property seems not necessary in random components.
         dispatch(getAllMenu(menu))
     }, [dispatch])
 
     return (
         <div>
-            <RandomChoice onRandomClick={onRandomClick} selectedRandomMenu={randomChoice}/>
+            <RandomChoice onRandomClick={onRandomClick} selectedRandomMenu={randomChoice} />
         </div>
     )
 }

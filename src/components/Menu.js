@@ -1,5 +1,5 @@
 import React from 'react'
-import { MenuImageStyle } from '../styles/style'
+import { ImageStyle } from '../styles/style'
 
 const Menu = ({ menu, loading }) => {
 
@@ -12,7 +12,7 @@ const Menu = ({ menu, loading }) => {
         <React.Fragment>
         {menu.map((food, index) => {
             return (<div key={index}>
-                        <MenuImageStyle src={food.imageSrc} alt={food.imageSrc}/>
+                        <ImageStyle src={food.imageSrc} alt={food.menuName}/>
                         <p key={index}>{food.menuName}</p>
                     </div>)
         })}

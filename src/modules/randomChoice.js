@@ -21,19 +21,43 @@ const roll = (state, count) => {
 
     let menuArray = []
     for (let menu in state) {
-        if (menu === undefined || menu === 'clickedCategoryName' || menu === 'count') continue
+        if (menu === undefined || menu === 'count') continue
         state[menu].map(element => element.menuName && menuArray.push(element.menuName))
     }
-    let result = []
+    let chosenMenu = []
     let taken = []
     let len = menuArray.length
     let n = count
 
     while (n--) {
         let x = Math.floor(Math.random() * len);
-        result[n] = menuArray[x in taken ? taken[x] : x];
+        chosenMenu[n] = menuArray[x in taken ? taken[x] : x];
         taken[x] = --len in taken ? taken[len] : len;
     }
+
+    let res = []
+
+    // need to refactoring ... someday ¯\(°_o)/¯
+    for (let menu in state) { // get image src from menu state by searching
+        if (menu === undefined || menu === 'count') continue
+        state[menu].map(element => {
+            chosenMenu.map(value => {
+                if (value === element.menuName) { // if menu key equals value is chosen menuName randomly.
+                    const { menuName, imageSrc } = element
+                    res.push({ menuName, imageSrc })
+                }
+                return value
+            })
+            return element
+        })
+    }
+
+    // bug happen sometimes: duplicate value inside res array. temporarily solve below function
+    
+    const result = res.filter((element, index, self) =>
+            index === self.findIndex((t) => (
+                t.menuName === element.menuName
+            )))
     
     return result
 }

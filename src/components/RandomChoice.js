@@ -1,6 +1,7 @@
 import React, { useCallback, useState } from 'react'
 import { RandomlyChosen } from '../styles/style'
 import { RandomChoiceStyleBlock } from '../styles/style'
+import { ImageStyle } from '../styles/style'
 
 const RandomChoice = ({ onRandomClick, selectedRandomMenu }) => {
     const [ count, setCount ] = useState(1)
@@ -17,7 +18,8 @@ const RandomChoice = ({ onRandomClick, selectedRandomMenu }) => {
             <input type='number' min='1' max='3' value={count} onChange={onChange} /> 개
         </RandomChoiceStyleBlock>
         <RandomlyChosen>
-            { Array.isArray(selectedRandomMenu.rolled) && selectedRandomMenu.rolled.map((element, index)  => <p key={index}>{element}</p>)}
+            { Array.isArray(selectedRandomMenu.rolled) && selectedRandomMenu.rolled.map((element, index)  =>
+                                            (<React.Fragment key={index}><ImageStyle src={element.imageSrc} alt={element.menuName}/><p>{element.menuName}</p></React.Fragment>))}
         </RandomlyChosen>
         </React.Fragment>
     )
