@@ -108,6 +108,15 @@ export const RandomlyChosen = styled.div`
     flex-wrap: nowrap;
     padding: 0;
     justify-content: space-around;
+
+    & > p {
+      @media (max-width: 427px) {
+        padding-top: 6px;
+      }
+      @media (min-width: 1024px) {
+        padding-top: 30px;
+      }
+    }
 `
 
 export const PaginationStyle = styled.div`
