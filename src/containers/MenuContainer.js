@@ -32,7 +32,7 @@ const MenuContainer = () => {
                 setCurrentPage(1)
                 return changedCategoryName
             }
-            return prev
+            return selectedCategoryName
         })
     })
 

@@ -1,18 +1,8 @@
-import { ON_SELECT } from '../types/category'
+import { initialCategoryState, ON_SELECT } from '../types/category'
 import { put, takeLatest } from 'redux-saga/effects'
 import { showMenu } from '../modules/menu'
 
 export const select = (categoryId, clickedCategoryName) => ({ type: ON_SELECT, categoryId, clickedCategoryName })
-
-const initialState = [
-    { categoryId: 1, categoryName: "한식", selected: false },
-    { categoryId: 2, categoryName: "양식", selected: false },
-    { categoryId: 3, categoryName: "중식", selected: false },
-    { categoryId: 4, categoryName: "일식", selected: false },
-    { categoryId: 5, categoryName: "분식", selected: false },
-    { categoryId: 6, categoryName: "기타", selected: false },
-    { categoryId: 7, categoryName: "채식", selected: false }
-]
 
 function* selectSaga(action) {
     const clickedCategoryName = yield action.clickedCategoryName
@@ -23,7 +13,7 @@ export function* categorySaga() {
     yield takeLatest(ON_SELECT, selectSaga)
 }
 
-export default function category(state = initialState, action) {
+export default function category(state = initialCategoryState, action) {
     switch (action.type) {
         case ON_SELECT:
             return state.map((element) => { 

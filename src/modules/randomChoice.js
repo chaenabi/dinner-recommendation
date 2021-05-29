@@ -18,10 +18,11 @@ const initialState = []
 
 const roll = (state, count) => {
     /* filter menuName by selected category by user */
+
     let menuArray = []
     for (let menu in state) {
         if (menu === undefined || menu === 'clickedCategoryName' || menu === 'count') continue
-        state[menu].map(e => e.menuName && menuArray.push(e.menuName))
+        state[menu].map(element => element.menuName && menuArray.push(element.menuName))
     }
     let result = []
     let taken = []
