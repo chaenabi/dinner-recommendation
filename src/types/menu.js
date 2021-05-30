@@ -88,7 +88,7 @@ import junghwabibimbab from '../images/chineseFood/customized/junghwabibimbab.jp
 import maratang from '../images/chineseFood/customized/maratang.jpg'
 import tangsuyuk from '../images/chineseFood/customized/tangsuyuk.jpg'
 import ulmyeon from '../images/chineseFood/customized/ulmyeon.jpg'
-import yangjanpgpi from '../images/chineseFood/customized/yangjanpgpi.jpg'
+import yangjangpi from '../images/chineseFood/customized/yangjangpi.jpg'
 import donburi from '../images/japaneseFood/coveredrice/donburi.jpg'
 import gatsudong from '../images/japaneseFood/coveredrice/gatsudong.jpg'
 import soybeaneggbab from '../images/japaneseFood/coveredrice/soybeaneggbab.jpg'
@@ -474,21 +474,16 @@ export const initialMenuState = {
                 },
                 {
                     menuId: 16,
-                    menuName: "미국식 스테이크",
+                    menuName: "스테이크",
                     imageSrc: steak,
                 },
                 {
                     menuId: 17,
-                    menuName: "케비어",
-                    imageSrc: kimchi,
-                },
-                {
-                    menuId: 18,
                     menuName: "그냥 빵",
                     imageSrc: bake,
                 },
                 {
-                    menuId: 19,
+                    menuId: 18,
                     menuName: "시리얼",
                     imageSrc: cereal,
                 },
@@ -569,7 +564,7 @@ export const initialMenuState = {
                 {
                     menuId: 19,
                     menuName: "양장피",
-                    imageSrc: yangjanpgpi,
+                    imageSrc: yangjangpi,
                 },
                 {
                     menuId: 20,
