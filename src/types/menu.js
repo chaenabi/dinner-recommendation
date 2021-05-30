@@ -302,7 +302,7 @@ export const initialMenuState = {
                 },
                 {
                     menuId: 60,
-                    menuName: "소고기구이",
+                    menuName: "양푼이 갈비찜",
                     imageSrc: kimchi,
                     selectedMenu: false
                 },
@@ -363,6 +363,12 @@ export const initialMenuState = {
                 {
                     menuId: 70,
                     menuName: "양념치킨",
+                    imageSrc: kimchi,
+                    selectedMenu: false
+                },
+                {
+                    menuId: 71,
+                    menuName: "치킨마요",
                     imageSrc: kimchi,
                     selectedMenu: false
                 },
@@ -674,7 +680,7 @@ export const initialMenuState = {
                 },
                 {
                     menuId: 15,
-                    menuName: "엿",
+                    menuName: "토스트",
                     imageSrc: kimchi,
                     selectedMenu: false
                 },
@@ -711,12 +717,6 @@ export const initialMenuState = {
                 {
                     menuId: 19,
                     menuName: "닭꼬치",
-                    imageSrc: kimchi,
-                    selectedMenu: false
-                },
-                {
-                    menuId: 20,
-                    menuName: "토스트",
                     imageSrc: kimchi,
                     selectedMenu: false
                 },
