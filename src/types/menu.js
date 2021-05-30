@@ -61,7 +61,7 @@ import soybeanCrap from '../images/koreanFood/etc/soybeanCrap.jpg'
 import seasonedchicken from '../images/koreanFood/etc/seasonedchicken.jpg'
 import chickenmayo from '../images/koreanFood/etc/chickenmayo.jpg'
 import bake from '../images/westernFood/standard/bake.jpg'
-import cereal from '../images/westernFood/standard/cereal.jpg'
+import serial from '../images/westernFood/standard/serial.jpg'
 import pizza from '../images/westernFood/standard/pizza.jpg'
 import spagetti from '../images/westernFood/standard/spagetti.jpg'
 import steak from '../images/westernFood/standard/steak.jpg'
@@ -485,7 +485,7 @@ export const initialMenuState = {
                 {
                     menuId: 18,
                     menuName: "시리얼",
-                    imageSrc: cereal,
+                    imageSrc: serial,
                 },
     ],
     "채식" : [
