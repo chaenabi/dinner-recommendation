@@ -4,6 +4,77 @@ import jjaguri from '../images/koreanFood/jjige/jjaguri.jpg'
 import suntofu from '../images/koreanFood/jjige/suntofu.jpg'
 import budae from '../images/koreanFood/jjige/budae.jpg'
 import dongtae from '../images/koreanFood/jjige/dongtae.jpg'
+import al from '../images/koreanFood/tangGuk/al.jpg'
+import beefmu from '../images/koreanFood/tangGuk/beefmu.jpg'
+import boger from '../images/koreanFood/tangGuk/boger.jpg'
+import bonehaejang from '../images/koreanFood/tangGuk/bonehaejang.jpg'
+import chogye from '../images/koreanFood/tangGuk/chogye.jpg'
+import chuer from '../images/koreanFood/tangGuk/chuer.jpg'
+import congnamul from '../images/koreanFood/tangGuk/congnamul.jpg'
+import cooloi from '../images/koreanFood/tangGuk/cooloi.jpg'
+import cowhead from '../images/koreanFood/tangGuk/cowhead.jpg'
+import dakbaeksuk from '../images/koreanFood/tangGuk/dakbaeksuk.jpg'
+import dakdori from '../images/koreanFood/tangGuk/dakdori.jpg'
+import dasulgi from '../images/koreanFood/tangGuk/dasulgi.jpg'
+import degu from '../images/koreanFood/tangGuk/degu.jpg'
+import dongtaetang from '../images/koreanFood/tangGuk/dongtaetang.jpg'
+import forkgukbab from '../images/koreanFood/tangGuk/forkgukbab.jpg'
+import galbi from '../images/koreanFood/tangGuk/galbi.jpg'
+import gulgukbab from '../images/koreanFood/tangGuk/gulgukbab.jpg'
+import haemul from '../images/koreanFood/tangGuk/haemul.jpg'
+import jaechub from '../images/koreanFood/tangGuk/jaechub.jpg'
+import maeuntang from '../images/koreanFood/tangGuk/maeuntang.jpg'
+import ongsimiSeaweed from '../images/koreanFood/tangGuk/ongsimiSeaweed.jpg'
+import samgye from '../images/koreanFood/tangGuk/samgye.jpg'
+import seolleong from '../images/koreanFood/tangGuk/seolleong.jpg'
+import sujaebi from '../images/koreanFood/tangGuk/sujaebi.jpg'
+import dakgumtang from '../images/koreanFood/tangGuk/dakgumtang.jpg'
+import gamjatang from '../images/koreanFood/tangGuk/gamjatang.jpg'
+import agu from '../images/koreanFood/jjim/agu.jpg'
+import crabjjim from '../images/koreanFood/jjim/crabjjim.jpg'
+import galbijjim from '../images/koreanFood/jjim/galbijjim.jpg'
+import jjimdak from '../images/koreanFood/jjim/jjimdak.jpg'
+import nakgi from '../images/koreanFood/jjim/nakgi.jpg'
+import yangpunigalbijjim from '../images/koreanFood/jjim/yangpunigalbijjim.jpg'
+import dongtaejeon from '../images/koreanFood/jeon/dongtaejeon.jpg'
+import haemulpajeon from '../images/koreanFood/jeon/haemulpajeon.jpg'
+import pajeon from '../images/koreanFood/jeon/pajeon.jpg'
+import potatojeon from '../images/koreanFood/jeon/potatojeon.jpg'
+import shrimpjeon from '../images/koreanFood/jeon/shrimpjeon.jpg'
+import japchae from '../images/koreanFood/myeon/japchae.jpg'
+import congguksu from '../images/koreanFood/myeon/congguksu.jpg'
+import fishtang from '../images/koreanFood/myeon/fishtang.jpg'
+import kalguksu from '../images/koreanFood/myeon/kalguksu.jpg'
+import milmyeon from '../images/koreanFood/myeon/milmyeon.jpg'
+import nyengmyeon from '../images/koreanFood/myeon/nyengmyeon.jpg'
+import ramyeon from '../images/koreanFood/myeon/ramyeon.jpg'
+import duckgui from '../images/koreanFood/gui/duckgui.jpg'
+import fishgui from '../images/koreanFood/gui/fishgui.jpg'
+import porkgalbi from '../images/koreanFood/gui/porkgalbi.jpg'
+import samgyepsal from '../images/koreanFood/gui/samgyepsal.jpg'
+import ottDak from '../images/koreanFood/etc/ottDak.jpg'
+import jeyukbogum from '../images/koreanFood/etc/jeyukbogum.jpg'
+import panChuggumi from '../images/koreanFood/etc/panChuggumi.jpg'
+import riceburger from '../images/koreanFood/etc/riceburger.jpg'
+import seasonedCrap from '../images/koreanFood/etc/seasonedCrap.jpg'
+import soybeanCrap from '../images/koreanFood/etc/soybeanCrap.jpg'
+import seasonedchicken from '../images/koreanFood/etc/seasonedchicken.jpg'
+import chickenmayo from '../images/koreanFood/etc/chickenmayo.jpg'
+import bake from '../images/westernFood/standard/bake.jpg'
+import cereal from '../images/westernFood/standard/cereal.jpg'
+import pizza from '../images/westernFood/standard/pizza.jpg'
+import spagetti from '../images/westernFood/standard/spagetti.jpg'
+import steak from '../images/westernFood/standard/steak.jpg'
+import hamburger from '../images/westernFood/fast/hamburger.jpg'
+import kfc from '../images/westernFood/fast/kfc.jpg'
+import sandwichi from '../images/westernFood/fast/sandwichi.jpg'
+import buffalowing from '../images/westernFood/etc/buffalowing.jpg'
+import boribabgochu from '../images/vegetableFood/boribabgochu.jpg'
+import conggogi from '../images/vegetableFood/conggogi.jpg'
+import kimchibab from '../images/vegetableFood/kimchibab.png'
+import salad from '../images/vegetableFood/salad.jpg'
+import walnamssam from '../images/vegetableFood/walnamssam.jpg'
+
 
 export const GET_MENU = 'menu/GET_MENU'
 
@@ -42,316 +113,324 @@ export const initialMenuState = {
                 {
                     menuId: 16,
                     menuName: "뼈다귀해장국",
-                    imageSrc: kimchi,                    
+                    imageSrc: bonehaejang,                    
                 },
                 {
                     menuId: 17,
                     menuName: "소고기무국",
-                    imageSrc: kimchi,                   
+                    imageSrc: beefmu,                   
                 },
                 {
                     menuId: 18,
                     menuName: "콩나물해장국",
-                    imageSrc: kimchi,                
+                    imageSrc: congnamul,                
                 },
                 {
                     menuId: 19,
                     menuName: "다슬기국",
-                    imageSrc: kimchi,
+                    imageSrc: dasulgi,
                 },
                 {
                     menuId: 20,
                     menuName: "갈비탕",
-                    imageSrc: kimchi,
+                    imageSrc: galbi,
                 },
                 { 
                     menuId: 21,
                     menuName: "삼계탕",
-                    imageSrc: denjang,
+                    imageSrc: samgye,
                 },
                 {
                     menuId: 22,
                     menuName: "해물탕",
-                    imageSrc: kimchi,
+                    imageSrc: haemul,
                 },
                 {
                     menuId: 23,
                     menuName: "초계탕",
-                    imageSrc: kimchi,
+                    imageSrc: chogye,
                 },
                 {
                     menuId: 24,
                     menuName: "매운탕",
-                    imageSrc: kimchi,
+                    imageSrc: maeuntang,
                 },
                 {
                     menuId: 25,
                     menuName: "추어탕",
-                    imageSrc: kimchi,
+                    imageSrc: chuer,
                 },
                 {
                     menuId: 26,
                     menuName: "알탕",
-                    imageSrc: kimchi,
+                    imageSrc: al,
                 },
                 {
                     menuId: 27,
-                    menuName: "어탕",
-                    imageSrc: kimchi,
+                    menuName: "닭곰탕",
+                    imageSrc: dakgumtang,
                 },
                 {
                     menuId: 28,
                     menuName: "대구탕",
-                    imageSrc: kimchi,
+                    imageSrc: degu,
                 },
                 {
                     menuId: 29,
                     menuName: "닭도리탕",
-                    imageSrc: kimchi,
+                    imageSrc: dakdori,
                 },
                 {
                     menuId: 30,
                     menuName: "설렁탕",
-                    imageSrc: kimchi,
+                    imageSrc: seolleong,
                 },
                 {
                     menuId: 31,
                     menuName: "동태탕",
-                    imageSrc: kimchi,
+                    imageSrc: dongtaetang,
                 },
                 {
                     menuId: 32,
                     menuName: "감자탕",
-                    imageSrc: kimchi,
+                    imageSrc: gamjatang,
                 },
                 {
                     menuId: 33,
                     menuName: "돼지국밥",
-                    imageSrc: kimchi,
+                    imageSrc: forkgukbab,
                 },
                 {
                     menuId: 34,
                     menuName: "소머리국밥",
-                    imageSrc: kimchi,
+                    imageSrc: cowhead,
                 },
                 {
                     menuId: 35,
                     menuName: "굴국밥",
-                    imageSrc: kimchi,
+                    imageSrc: gulgukbab,
                 },
                 {
                     menuId: 36,
                     menuName: "백숙",
-                    imageSrc: kimchi,
+                    imageSrc: dakbaeksuk,
                 },
                 {
                     menuId: 37,
                     menuName: "재첩국",
-                    imageSrc: kimchi,
+                    imageSrc: jaechub,
                 },
                 { 
                     menuId: 38,
                     menuName: "수제비",
-                    imageSrc: denjang,
+                    imageSrc: sujaebi,
                 },
                 {
                     menuId: 39,
                     menuName: "미역국",
-                    imageSrc: kimchi,
+                    imageSrc: ongsimiSeaweed,
                 },
                 {
                     menuId: 40,
                     menuName: "오이냉국",
-                    imageSrc: kimchi,
+                    imageSrc: cooloi,
                 },
                 {
                     menuId: 41,
                     menuName: "복어탕",
-                    imageSrc: kimchi,
-                    
+                    imageSrc: boger,
                 },
                 {
                     menuId: 42,
                     menuName: "아구찜",
-                    imageSrc: kimchi,
+                    imageSrc: agu,
                 },
                 {
                     menuId: 43,
                     menuName: "찜닭",
-                    imageSrc: kimchi,
+                    imageSrc: jjimdak,
                 },
                 {
                     menuId: 44,
                     menuName: "낙지찜",
-                    imageSrc: kimchi,
+                    imageSrc: nakgi,
                 },
                 {
                     menuId: 45,
                     menuName: "꽃게찜",
-                    imageSrc: kimchi,
+                    imageSrc: crabjjim,
                 },
                 {
                     menuId: 46,
                     menuName: "갈비찜",
-                    imageSrc: kimchi,
+                    imageSrc: galbijjim,
                 },
                 {
                     menuId: 47,
-                    menuName: "파전",
-                    imageSrc: kimchi,
+                    menuName: "양푼이 갈비찜",
+                    imageSrc: yangpunigalbijjim,
                 },
                 {
                     menuId: 48,
-                    menuName: "해물파전",
-                    imageSrc: kimchi,
-                },
-                { 
-                    menuId: 49,
-                    menuName: "동태전",
-                    imageSrc: denjang,
+                    menuName: "파전",
+                    imageSrc: pajeon,
                 },
                 {
+                    menuId: 49,
+                    menuName: "해물파전",
+                    imageSrc: haemulpajeon,
+                },
+                { 
                     menuId: 50,
-                    menuName: "감자전",
-                    imageSrc: kimchi,
+                    menuName: "동태전",
+                    imageSrc: dongtaejeon,
                 },
                 {
                     menuId: 51,
+                    menuName: "감자전",
+                    imageSrc: potatojeon,
+                },
+                {
+                    menuId: 52,
                     menuName: "새우전",
-                    imageSrc: kimchi,
+                    imageSrc: shrimpjeon,
                 },
                 {
                     menuId: 53,
                     menuName: "어탕국수",
-                    imageSrc: kimchi,
+                    imageSrc: fishtang,
                 },
                 {
                     menuId: 54,
                     menuName: "칼국수",
-                    imageSrc: kimchi,
+                    imageSrc: kalguksu,
                 },
                 {
                     menuId: 55,
                     menuName: "콩국수",
-                    imageSrc: kimchi,
+                    imageSrc: congguksu,
                 },
                 {
                     menuId: 56,
                     menuName: "밀면",
-                    imageSrc: kimchi,
+                    imageSrc: milmyeon,
                 },
                 {
                     menuId: 57,
                     menuName: "라면",
-                    imageSrc: kimchi,
+                    imageSrc: ramyeon,
                 },
                 {
                     menuId: 58,
                     menuName: "잡채",
-                    imageSrc: kimchi,
+                    imageSrc: japchae,
                 },
                 {
                     menuId: 59,
-                    menuName: "생선구이",
-                    imageSrc: kimchi,
+                    menuName: "냉면",
+                    imageSrc: nyengmyeon,
                 },
                 {
                     menuId: 60,
-                    menuName: "양푼이 갈비찜",
-                    imageSrc: kimchi,
+                    menuName: "생선구이",
+                    imageSrc: fishgui,
                 },
                 {
                     menuId: 61,
-                    menuName: "돼지갈비",
-                    imageSrc: kimchi,
+                    menuName: "양푼이 갈비찜",
+                    imageSrc: yangpunigalbijjim,
                 },
                 {
                     menuId: 62,
-                    menuName: "삼겹살",
-                    imageSrc: kimchi,
+                    menuName: "돼지갈비",
+                    imageSrc: porkgalbi,
                 },
                 {
                     menuId: 63,
-                    menuName: "오리고기",
-                    imageSrc: kimchi,
+                    menuName: "삼겹살",
+                    imageSrc: samgyepsal,
                 },
                 {
                     menuId: 64,
-                    menuName: "밥버거",
-                    imageSrc: kimchi,
+                    menuName: "오리고기",
+                    imageSrc: duckgui,
                 },
                 {
                     menuId: 65,
-                    menuName: "간장게장",
-                    imageSrc: kimchi,
+                    menuName: "밥버거",
+                    imageSrc: riceburger,
                 },
                 {
                     menuId: 66,
-                    menuName: "철판쭈꾸미",
-                    imageSrc: kimchi,
+                    menuName: "간장게장",
+                    imageSrc: soybeanCrap,
                 },
                 {
                     menuId: 67,
-                    menuName: "옻닭",
-                    imageSrc: kimchi,
+                    menuName: "철판쭈꾸미",
+                    imageSrc: panChuggumi,
                 },
                 {
                     menuId: 68,
-                    menuName: "제육볶음",
-                    imageSrc: kimchi,
+                    menuName: "옻닭",
+                    imageSrc: ottDak,
                 },
                 {
                     menuId: 69,
-                    menuName: "양념게장",
-                    imageSrc: kimchi,
+                    menuName: "제육볶음",
+                    imageSrc: jeyukbogum,
                 },
                 {
                     menuId: 70,
-                    menuName: "양념치킨",
-                    imageSrc: kimchi,
+                    menuName: "양념게장",
+                    imageSrc: seasonedCrap,
                 },
                 {
                     menuId: 71,
-                    menuName: "치킨마요",
-                    imageSrc: kimchi,
+                    menuName: "양념치킨",
+                    imageSrc: seasonedchicken,
                 },
-
+                {
+                    menuId: 72,
+                    menuName: "치킨마요",
+                    imageSrc: chickenmayo,
+                },
     ],
     "양식" : [
                 {
                     menuId: 10,
                     menuName: "햄버거",
-                    imageSrc: kimchi,
+                    imageSrc: hamburger,
                 },
                 {
                     menuId: 11,
                     menuName: "피자",
-                    imageSrc: kimchi,
+                    imageSrc: pizza,
                 },
                 {
                     menuId: 12,
                     menuName: "KFC치킨",
-                    imageSrc: kimchi,
+                    imageSrc: kfc,
                 },
                 {
                     menuId: 13,
                     menuName: "샌드위치",
-                    imageSrc: kimchi
+                    imageSrc: sandwichi
                 },
                 {
                     menuId: 14,
-                    menuName: "오믈렛",
-                    imageSrc: kimchi,
+                    menuName: "스파게티",
+                    imageSrc: spagetti,
                 },
                 {
                     menuId: 15,
                     menuName: "버팔로윙",
-                    imageSrc: kimchi,
+                    imageSrc: buffalowing,
                 },
                 {
                     menuId: 16,
                     menuName: "미국식 스테이크",
-                    imageSrc: kimchi,
+                    imageSrc: steak,
                 },
                 {
                     menuId: 17,
@@ -361,44 +440,39 @@ export const initialMenuState = {
                 {
                     menuId: 18,
                     menuName: "그냥 빵",
-                    imageSrc: kimchi,
+                    imageSrc: bake,
                 },
                 {
                     menuId: 19,
                     menuName: "시리얼",
-                    imageSrc: kimchi,
-                },
-                {
-                    menuId: 20,
-                    menuName: "스파게티",
-                    imageSrc: kimchi,
+                    imageSrc: cereal,
                 },
     ],
     "채식" : [
                 {
                     menuId: 10,
                     menuName: "월남쌈",
-                    imageSrc: kimchi,
+                    imageSrc: walnamssam,
                 },
                 {
                     menuId: 11,
                     menuName: "보리밥에 풋고추",
-                    imageSrc: kimchi,
+                    imageSrc: boribabgochu,
                 },
                 {
                     menuId: 12,
                     menuName: "김치에 밥",
-                    imageSrc: kimchi,
+                    imageSrc: kimchibab,
                 },
                 {
                     menuId: 13,
                     menuName: "웰빙샐러드",
-                    imageSrc: kimchi,
+                    imageSrc: salad,
                 },
                 {
                     menuId: 14,
                     menuName: "콩고기",
-                    imageSrc: kimchi,
+                    imageSrc: conggogi,
                 },
     ],
     "중식" : [
