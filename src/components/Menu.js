@@ -6,6 +6,7 @@ const Menu = ({ menu, loading }) => {
     if (loading) {
         return <h2>Loading...</h2>
     }
+    
     if (menu === undefined) return <div>메뉴가 아직 준비되지 않았습니다.</div>
     
     return (
